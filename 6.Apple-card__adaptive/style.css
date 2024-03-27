@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  min-height: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(125deg, #fc3f5fff 0%, #7d61ffff 100.32%);
+  padding: 48px;
+}
+.container {
+  border-radius: 32px;
+  background: linear-gradient(
+    180deg,
+    rgba(43, 34, 21, 0.8) -1.22%,
+    #22282e 101.326%
+  );
+  box-shadow: 0px 0px 250px 0px rgba(0, 0, 0, 0.3);
+  max-width: 1410px;
+  width: 100%;
+  margin-inline: auto;
+}
+.header {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+
+
+
+.header-logo,
+.header-btn {
+  min-width: 175px;
+  transition: .2s all ease-in-out;
+}
+.header-logo:hover {
+  transform: translateY(-5px);
+}
+.header-nav {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  
+}
+
+.header-nav__link {
+  color: #a0a3a7;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.header-nav__link:hover {
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+}
+
+.header-btn {
+  display: flex;
+  justify-content: end;
+}
+.header-menu {
+  display: none;
+}
+.header-menu .material-icons {
+  color: #fff;
+}
+.header-btn__link {
+  display: inline-block;
+  cursor: pointer;
+  padding: 16px 24px;
+  border-radius: 999px;
+  background: linear-gradient(10deg, #e1e1e1 8.37%, #fff 9.95%);
+  box-shadow: 0px 4px 50px 0px rgba(37, 37, 37, 0.08),
+    1px 1px 1px 0px rgba(135, 135, 135, 0.32) inset;
+  color: #24282e;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s all ease-in-out;
+}
+.header-btn__link:hover {
+  transform: scale(1.03);
+}
+.header-btn__small {
+  display: none;
+}
+.main {
+  max-width: 598px;
+  margin-inline: auto;
+  text-align: center;
+  padding-top: 179px;
+  padding-bottom: 161px;
+}
+
+.title {
+  color: rgb(242, 244, 247);
+  font-family: Poppins, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+.title:hover {
+  transform: translatex(-4px) scale(1.1);
+  transition: 0.2s all ease-in-out;
+}
+
+.desc {
+  color: rgb(242, 244, 247);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 80px;
+}
+
+
+.btn-learn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 999px;
+  border: 2px solid #fc40f4;
+  color: #fc40f4;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 32px 16px 32px;
+  min-width: 239px;
+  transition: 0.2s all ease-in-out;
+}
+.btn-learn:hover{
+  border-color:  #a529bd;
+}
+.loader {
+  margin-top: 64px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  position: static;
+  gap: 32px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  .header-btn {
+    display: none;
+    padding: 50px 20px;
+  }
+  .header-btn__small {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 999px;
+    background: linear-gradient(10deg, #e1e1e1 8.37%, #fff 9.95%);
+    color: #24282e;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding: 16px 32px 16px 32px;
+    min-width: 239px;
+  }
+  .desc {
+    margin-bottom: 20px;
+  }
+  .loader {
+    margin-top: 30px;
+  }
+}
+#headerIcon {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .header-nav {
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 80%);
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    transition: 0.2s all ease-in-out;
+    transform: translateX(-120%);
+  }
+  .header-btn__small {
+    display: none;
+  }
+  #headerIcon:checked ~ .header-nav {
+    transform: translateX(0);
+  }
+  .header-btn {
+    display: flex;
+    transition: 0.2s all ease-in-out;
+    position: fixed;
+    bottom: 20px;
+    left: calc(50% - 15%);
+    transform: translateX(-50%) scale(0);
+  }
+  #headerIcon:checked ~ .header-btn {
+    transform: translateX(-50%) scale(1);
+  }
+  .header-nav__link {
+    color: #fff;
+  }
+  .header-menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 592px) {
+  body,
+  .header {
+    padding: 20px;
+  }
+  .title {
+    color: rgb(242, 244, 247);
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 280px) {
+  body,
+  .container,
+  .header {
+    padding: 10px;
+  }
+}

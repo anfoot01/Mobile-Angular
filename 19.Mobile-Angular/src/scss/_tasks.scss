@@ -1,0 +1,65 @@
+.tasks {
+
+    &__item {
+        display: flex;
+        gap: 11px;
+
+    }
+
+    &__number {
+        color: rgb(64, 53, 114);
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        margin-top: 18px;
+    }
+
+    &__title {
+        max-width: 74px;
+        border-radius: 15px;
+        background: rgb(246, 245, 251);
+        color: rgb(97, 89, 139);
+        font-family: Roboto;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 12px;
+        padding: 12px;
+    }
+
+    &__overall-progress {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 15px;
+
+        &__title {
+            color: rgb(89, 80, 133);
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+        }
+
+        &__title span {
+            color: rgb(201, 63, 141);
+            font-weight: 500;
+        }
+
+        &__path {
+            width: 315px;
+            height: 8px;
+            border-radius: 5px;
+            background: rgb(253, 249, 251);
+            position: relative;
+            &__fill {
+                width: 155.5px;
+                height: 4px;
+                border-radius: 5px;
+                background: rgb(201, 63, 141);
+                position: absolute;
+                top: 2px;
+            }
+        }
+    }
+}

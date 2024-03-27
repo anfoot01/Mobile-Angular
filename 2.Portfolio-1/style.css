@@ -1,0 +1,57 @@
+.container {
+    border-radius: 10px;
+    background: #f7f7f7;
+    box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.25);
+    max-width: 816px;
+    text-align: center;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    text-align: center;
+    margin-top: 53px;
+}
+
+.description {
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    max-width: 380px;
+    margin-inline: auto;
+    margin-bottom: 38px;
+}
+
+.getInTouch {
+    display: inline-flex;
+    gap: 13px;
+    text-align: center;
+    border-radius: 5px;
+    background: linear-gradient(270deg, #0075FF 3.87%, #00B2FF 127.1%);
+    box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 15px 20px;
+    margin-bottom: 49px;
+}
+.social{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 55px;
+}

@@ -1,0 +1,41 @@
+.quetions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        color: rgb(64, 53, 114);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        align-items: center;
+        position: relative;
+    }
+
+    &__item {
+        border-radius: 15px;
+        background: rgb(246, 245, 251);
+        max-width: 315px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__desc {
+        max-width: 222px;
+        color: rgb(64, 53, 114);
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        padding-left: 54px;
+        margin-bottom: 23px;
+    }
+
+    &__link {
+        position: absolute;
+        left: 270px;
+    }
+}

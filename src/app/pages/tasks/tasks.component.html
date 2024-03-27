@@ -1,0 +1,19 @@
+
+<h1 class="title">Daily Tasks</h1>
+
+<div class="tasks__list">
+  <div class="tasks__item">
+    <div class="tasks__title" *ngFor="let document of tasks">
+      {{document.title}}
+      <div class="tasks__number">
+        1
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tasks__overall-progress">
+  <h1 class="tasks__overall-progress__title">Your overall progress is <span>60%</span></h1>
+  <div class="tasks__overall-progress__path">
+    <div class="tasks__overall-progress__path__fill"></div>
+  </div>
+</div>

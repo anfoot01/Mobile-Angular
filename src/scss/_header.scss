@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+    margin-bottom: 42px;
+
+    &__title {
+        color: rgb(89, 80, 133);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+    }
+
+    &__icons {
+        color: rgb(139, 151, 168);
+        cursor: pointer;
+    }
+}

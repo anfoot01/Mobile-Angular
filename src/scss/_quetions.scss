@@ -21,6 +21,7 @@
         max-width: 315px;
         display: flex;
         flex-direction: column;
+        height: 115px;
     }
 
     &__desc {
@@ -32,9 +33,11 @@
         line-height: 14px;
         padding-left: 54px;
         margin-bottom: 23px;
+        transform: translateY(-60px);
     }
 
     &__link {
-        
+        text-align: right;
+        transform: translateY(-40px);
     }
 }
